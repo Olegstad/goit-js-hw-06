@@ -12,3 +12,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryImg = document.querySelector(".gallery");
+
+const imageEl = images.map((image) => `<li><img src = ${image.url} alt = ${image.alt}></img></li>`);
+
+console.log(imageEl);
+
+galleryImg.insertAdjacentHTML("afterend", imageEl.join('')); 
+
+
+// Не виходить додати мінімальне оформлення галереї флексбоксами або грідами через CSS класи
