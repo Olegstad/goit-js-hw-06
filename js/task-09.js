@@ -9,13 +9,10 @@ const btnColorRef = document.querySelector('.change-color');
 const bgRef = document.querySelector('body');
 
 const onClick = () => { 
-  // console.dir(bgRef);
 
   bgRef.style.backgroundColor = getRandomHexColor();
 
-  console.dir(colorRef);
-
-  colorRef.innerText = getRandomHexColor();
+  colorRef.textContent = getRandomHexColor();
 }
 
 btnColorRef.addEventListener("click", onClick);
